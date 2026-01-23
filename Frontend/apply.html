@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply - Sunshine School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgb(12, 96, 53);
+            padding: 15px 40px;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .apply-container {
+            max-width: 500px;
+            margin: 60px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .apply-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: rgb(12, 96, 53);
+        }
+
+        .apply-container input,
+        .apply-container select,
+        .apply-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .apply-container button {
+            width: 100%;
+            padding: 12px;
+            background: rgb(12, 96, 53);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .apply-container button:hover {
+            background: rgb(0, 70, 40);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2 class="logo">☀ Sunshine School</h2>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <!-- <a href="index.html#about">About</a> -->
+            <!-- <a href="index.html#courses">Courses</a> -->
+        </div>
+    </nav>
+
+    <!-- Apply Form -->
+    <div class="apply-container">
+        <h2>Apply Now</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <select name="course" required>
+                <option value="">Select Course</option>
+                <option value="science">Science</option>
+                <option value="commerce">Commerce</option>
+                <option value="arts">Arts</option>
+            </select>
+            <textarea name="message" placeholder="Additional Info (Optional)" rows="4"></textarea>
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+</body>
+</html>
