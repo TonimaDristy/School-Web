@@ -172,15 +172,16 @@ footer {
 .login-container {
     width: 350px;
     margin: 80px auto;
-    background: white;
+    background: rgb(254, 255, 254);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(202, 236, 210, 0.2);
     text-align: center;
 }
 
 .login-container h2 {
     margin-bottom: 20px;
+
 }
 
 .login-container input,
@@ -188,16 +189,18 @@ footer {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
+    border-radius: 5px;
 }
 
 .login-container button {
     width: 100%;
     padding: 10px;
-    background: darkblue;
+    background: rgb(12, 96, 53);
     color: white;
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    border-radius: 5px;
 }
 
 #loginMsg {
