@@ -41,7 +41,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 90px;
+    padding-top: 120px;
     /* spacing from top of hero */
     text-align: center;
     color: white;
@@ -66,20 +66,48 @@ body {
     z-index: 0;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    /* big headline */
+
+/* .hero h1,
+.hero p {
     font-weight: bold;
-    margin-bottom: 15px;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
-    /* makes text readable over image */
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    display: inline-block;
+    padding: 1px 2px;
+    border-radius: 5px;
+} */
+
+.hero h1 {
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* reduce space from <p> */
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 9px;
 }
 
 .hero p {
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
     font-size: 1.3rem;
-    margin-bottom: 25px;
+    margin-top: 0;
+    /* remove any default top margin */
+    margin-bottom: 20px;
+    /* space before button */
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
 }
+
+
+
 
 .hero a {
     position: relative;
@@ -89,7 +117,7 @@ body {
 
 .hero-btn {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 1px;
     background: rgb(12, 96, 53);
     color: white;
     padding: 12px 25px;
