@@ -71,11 +71,16 @@ body {
     /* big headline */
     font-weight: bold;
     margin-bottom: 15px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
     /* makes text readable over image */
 }
 
-.hero p,
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
 .hero a {
     position: relative;
     /* text appears above overlay */
@@ -90,6 +95,16 @@ body {
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: rgb(0, 70, 40);
+    /* darker green on hover */
+    transform: scale(1.05);
+    /* small pop effect */
 }
 
 /* About */
