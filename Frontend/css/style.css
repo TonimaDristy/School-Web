@@ -18,7 +18,11 @@ body {
     margin: 0;
 }
 
-
+.menu a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
 
 .menu .btn {
     background: rgb(219, 143, 0);
