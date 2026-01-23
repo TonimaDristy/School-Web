@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | Sunshine School</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2 class="logo">☀ Sunshine School</h2>
+        <button onclick="logout()" class="btn">Logout</button>
+    </nav>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+        <h2 id="welcomeText">Welcome</h2>
+
+        <!-- Student -->
+        <div class="role-box" id="studentBox">
+            <h3>Student Panel</h3>
+            <p>View courses, results, and notices.</p>
+        </div>
+
+        <!-- Teacher -->
+        <div class="role-box" id="teacherBox">
+            <h3>Teacher Panel</h3>
+            <p>Manage classes, upload marks, give assignments.</p>
+        </div>
+
+        <!-- Head Teacher -->
+        <div class="role-box" id="headteacherBox">
+            <h3>Head Teacher Panel</h3>
+            <p>Monitor teachers, approve results, manage academics.</p>
+        </div>
+
+        <!-- Admin -->
+        <div class="role-box" id="adminBox">
+            <h3>Admin Panel</h3>
+            <p>Manage users, roles, system settings.</p>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
