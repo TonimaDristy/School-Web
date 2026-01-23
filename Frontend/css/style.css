@@ -6,13 +6,20 @@ body {
 
 /* Navbar */
 .navbar {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(12, 96, 53);
+    background: rgb(216, 122, 40);
     padding: 15px 40px;
     color: white;
+
 }
+
+
+
+
+
 
 .logo {
     margin: 0;
@@ -25,7 +32,7 @@ body {
 }
 
 .menu .btn {
-    background: rgb(219, 143, 0);
+    background: rgb(47, 114, 69);
     padding: 8px 14px;
     border-radius: 5px;
 }
