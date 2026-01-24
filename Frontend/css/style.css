@@ -448,49 +448,20 @@ footer {
 
 @media (max-width: 600px) {
 
-    /* Hero section */
-    .hero-content h1 {
-        font-size: 2rem;
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .hero-content p {
-        font-size: 1rem;
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
-    .section h2 {
-        font-size: 2.2rem;
-    }
-
-    /* Hero images stack */
-    .hero-images {
-        height: auto;
-    }
-
-    .hero-images img {
-        position: relative;
-        width: 90%;
-        max-width: 280px;
-        margin: 10px auto;
-        display: block;
-        animation: none;
-    }
-
-    .img1,
-    .img2,
-    .img3 {
-        top: auto;
-        left: auto;
-    }
-
-    /* Apply form */
-    .apply-card {
-        width: 90%;
-        padding: 25px 20px;
-    }
-
-    /* Navbar spacing */
     .menu a {
-        margin-left: 10px;
-        font-size: 0.9rem;
+        margin-left: 0;
     }
+
 }
