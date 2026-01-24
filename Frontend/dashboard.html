@@ -3,52 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | Sunshine School</title>
+    <title>Login | Sunshine School</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="apply-page">
 
-    <!-- ================= NAVBAR ================= -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <h2 class="logo">☀ Sunshine School</h2>
-            <button onclick="logout()" class="btn logout-btn">Logout</button>
+<nav class="navbar">
+    <div class="nav-container">
+        <h2 class="logo">☀ Sunshine School</h2>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#courses">Courses</a>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- ================= DASHBOARD ================= -->
-    <section class="dashboard-section">
-        <div class="container">
-            <h2 id="welcomeText" class="section-title">Welcome, [User]</h2>
+<section class="apply-section">
+    <div class="apply-card">
+        <h2>Login</h2>
+        <p>Access your Sunshine School account</p>
 
-            <div class="dashboard-cards">
-                <!-- Student -->
-                <div class="role-card" id="studentBox">
-                    <h3>Student Panel</h3>
-                    <p>View courses, results, and notices.</p>
-                </div>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
 
-                <!-- Teacher -->
-                <div class="role-card" id="teacherBox">
-                    <h3>Teacher Panel</h3>
-                    <p>Manage classes, upload marks, give assignments.</p>
-                </div>
+            <select id="role" required>
+                <option value="">Select Role</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="headteacher">Head Teacher</option>
+                <option value="admin">Admin</option>
+            </select>
 
-                <!-- Head Teacher -->
-                <div class="role-card" id="headteacherBox">
-                    <h3>Head Teacher Panel</h3>
-                    <p>Monitor teachers, approve results, manage academics.</p>
-                </div>
+            <button type="submit">Login</button>
+        </form>
 
-                <!-- Admin -->
-                <div class="role-card" id="adminBox">
-                    <h3>Admin Panel</h3>
-                    <p>Manage users, roles, system settings.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <p id="loginMsg"></p>
+    </div>
+</section>
 
-    <script src="js/dashboard.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
