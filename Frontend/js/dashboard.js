@@ -3,9 +3,9 @@ const role = localStorage.getItem("role");
 
 const welcomeText = document.getElementById("welcomeText");
 
-// If no role is set, redirect to login
+// If no role is set, redirect silently to login
 if (!role) {
-    window.location.href = "login.html";
+    window.location.href = "login.html"; // no alert here
 }
 
 // Update welcome message
@@ -19,25 +19,21 @@ roles.forEach(id => {
 });
 
 // Show only the box for the logged-in role
-switch (role) {
-    case "student":
-        document.getElementById("studentBox").style.display = "block";
-        break;
-    case "teacher":
-        document.getElementById("teacherBox").style.display = "block";
-        break;
-    case "headteacher":
-        document.getElementById("headteacherBox").style.display = "block";
-        break;
-    case "admin":
-        document.getElementById("adminBox").style.display = "block";
-        break;
+const boxIdMap = {
+    student: "studentBox",
+    teacher: "teacherBox",
+    headteacher: "headteacherBox",
+    admin: "adminBox"
+};
+
+if (boxIdMap[role]) {
+    document.getElementById(boxIdMap[role]).style.display = "block";
 }
 
 // Logout function
 function logout() {
     localStorage.clear();
-    window.location.href = "login.html";
+    window.location.href = "login.html"; // no alert
 }
 
 // Helper function to capitalize first letter
