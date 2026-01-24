@@ -55,7 +55,7 @@ body {
 
 /* ================= HERO ================= */
 
-.hero-kingster {
+/* .hero-kingster {
     min-height: 90vh;
     display: flex;
     justify-content: space-between;
@@ -64,7 +64,49 @@ body {
     background: linear-gradient(135deg, #1b0f2f, #2a1458, #0f2027);
     color: #fff;
     overflow: hidden;
+} */
+
+
+.hero-kingster {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    color: #fff;
+    overflow: hidden;
 }
+
+/* Blurred background image */
+.hero-kingster::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../images/img8.avif") center/cover no-repeat;
+    filter: blur(5px);
+    transform: scale(1.1);
+    /* prevents white edges from blur */
+    z-index: 0;
+}
+
+/* Dark overlay for readability */
+.hero-kingster::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 6, 34, 0.7);
+    z-index: 1;
+}
+
+/* bring content above background */
+.hero-content,
+.hero-images {
+    position: relative;
+    z-index: 2;
+}
+
+
 
 .hero-content {
     max-width: 500px;
