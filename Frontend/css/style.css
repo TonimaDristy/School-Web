@@ -436,3 +436,11 @@ footer {
         align-items: center;
     }
 }
+
+/* Hide all role cards by default */
+#studentBox,
+#teacherBox,
+#headteacherBox,
+#adminBox {
+    display: none;
+}
