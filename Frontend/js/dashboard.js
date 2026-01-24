@@ -34,3 +34,41 @@ function capitalize(str) {
     if (!str) return "";
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const role = localStorage.getItem("role");
+    const welcomeText = document.getElementById("welcomeText");
+
+    // Redirect silently if no role
+    if (!role) {
+        window.location.href = "login.html";
+        return; // stop execution
+    }
+
+    // Show welcome text
+    welcomeText.innerText = "Welcome, " + capitalize(role);
+
+    // Show the role-specific box only
+    const roleMap = {
+        student: "studentBox",
+        teacher: "teacherBox",
+        headteacher: "headteacherBox",
+        admin: "adminBox"
+    };
+
+    const boxId = roleMap[role];
+    if (boxId) {
+        document.getElementById(boxId).style.display = "block";
+    }
+
+    // Logout button
+    window.logout = function () {
+        localStorage.clear();
+        window.location.href = "login.html";
+    }
+
+    function capitalize(str) {
+        return str ? str.charAt(0).toUpperCase() + str.slice(1) : "";
+    }
+});
