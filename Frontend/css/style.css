@@ -171,9 +171,9 @@ body {
 }
 
 .img3 {
-    top: 200px;
+    top: 250px;
     left: 180px;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 @keyframes float {
