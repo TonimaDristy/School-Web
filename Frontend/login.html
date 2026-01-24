@@ -2,26 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Sunshine School</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="apply-page">
 
-    <!-- Navbar -->
-    <nav class="navbar">
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+    <div class="nav-container">
         <h2 class="logo">☀ Sunshine School</h2>
         <div class="menu">
             <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#courses">Courses</a>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- Login Box -->
-    <div class="login-container">
+<!-- ================= LOGIN SECTION ================= -->
+<section class="apply-section">
+    <div class="apply-card">
         <h2>Login</h2>
+        <p>Access your Sunshine School account</p>
 
         <form id="loginForm">
             <input type="email" id="email" placeholder="Email" required>
-
             <input type="password" id="password" placeholder="Password" required>
 
             <select id="role" required>
@@ -35,12 +41,13 @@
             <button type="submit">Login</button>
         </form>
 
-        <p id="loginMsg"></p>
+        <p id="loginMsg" class="form-msg"></p>
     </div>
+</section>
 
-    <!-- Axios -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="js/main.js"></script>
+<!-- Axios -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
