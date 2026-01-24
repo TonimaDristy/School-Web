@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(216, 122, 40);
+    background: rgb(12, 96, 53);
     padding: 15px 40px;
     color: white;
 
@@ -32,7 +32,7 @@ body {
 }
 
 .menu .btn {
-    background: rgb(47, 114, 69);
+    background: rgb(182, 109, 1);
     padding: 8px 14px;
     border-radius: 5px;
 }
@@ -147,6 +147,36 @@ body {
     padding: 60px 40px;
     text-align: center;
 }
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    /* centers images */
+    gap: 20px;
+    /* space between images */
+    margin-top: 30px;
+    flex-wrap: wrap;
+    /* makes it responsive on small screens */
+}
+
+.about-images img {
+    width: 300px;
+    /* set a fixed width or percentage */
+    height: 200px;
+    object-fit: cover;
+    /* crops image nicely */
+    border-radius: 10px;
+    /* rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-images img:hover {
+    transform: scale(1.05);
+    /* slight zoom on hover */
+}
+
+
 
 .gray {
     background-color: #eee;
