@@ -14,8 +14,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     // Save role temporarily (later JWT will replace this)
     localStorage.setItem("role", role);
 
-    // Temporary success message
-    alert("Logged in as " + role);
+
 
     // Redirect to dashboard
     window.location.href = "dashboard.html";
