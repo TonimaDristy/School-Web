@@ -1,49 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Sunshine School</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
 <body class="apply-page">
 
 <nav class="navbar">
     <div class="nav-container">
         <h2 class="logo">☀ Sunshine School</h2>
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#courses">Courses</a>
-        </div>
+        <button onclick="logout()" class="logout-btn">Logout</button>
     </div>
 </nav>
 
-<section class="apply-section">
-    <div class="apply-card">
-        <h2>Login</h2>
-        <p>Access your Sunshine School account</p>
+<section class="dashboard-section">
+    <h2 id="welcomeText" class="section-title">Welcome</h2>
 
-        <form id="loginForm">
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="password" id="password" placeholder="Password" required>
-
-            <select id="role" required>
-                <option value="">Select Role</option>
-                <option value="student">Student</option>
-                <option value="teacher">Teacher</option>
-                <option value="headteacher">Head Teacher</option>
-                <option value="admin">Admin</option>
-            </select>
-
-            <button type="submit">Login</button>
-        </form>
-
-        <p id="loginMsg"></p>
+    <div class="dashboard-cards">
+        <div class="role-card" id="studentBox" style="display:none">Student Panel</div>
+        <div class="role-card" id="teacherBox" style="display:none">Teacher Panel</div>
+        <div class="role-card" id="headteacherBox" style="display:none">Head Teacher Panel</div>
+        <div class="role-card" id="adminBox" style="display:none">Admin Panel</div>
     </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
 </body>
-</html>
