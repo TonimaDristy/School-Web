@@ -448,6 +448,14 @@ footer {
 
 @media (max-width: 600px) {
 
+    .hero-images img {
+        width: 220px;
+        /* smaller size */
+        max-width: 80%;
+        margin: 8px auto;
+        display: block;
+    }
+
     .nav-container {
         flex-direction: column;
         gap: 10px;
