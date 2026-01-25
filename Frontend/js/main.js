@@ -1,3 +1,5 @@
+// frontend>js>main.js
+
 document.getElementById("loginForm").addEventListener("submit", function (e) {
     e.preventDefault();
 

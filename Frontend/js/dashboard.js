@@ -1,3 +1,5 @@
+// frontend>dashboard.js
+
 // TEMP role (later this will come from JWT)
 const role = localStorage.getItem("role");
 
