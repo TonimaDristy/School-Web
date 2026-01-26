@@ -246,14 +246,14 @@ body {
     flex-wrap: wrap;
 }
 
-/* .course-card {
+.course-card {
     background: #fff;
     padding: 30px;
     width: 280px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
-} */
+}
 
 .course-card:hover {
     transform: translateY(-10px);
