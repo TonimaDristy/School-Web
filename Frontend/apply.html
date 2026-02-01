@@ -1,54 +1,61 @@
 <!-- frontend>apply.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apply - Sunshine School</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="apply-page">
-
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar">
-    <div class="nav-container">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="apply-page">
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+      <div class="nav-container">
         <h2 class="logo">☀ Sunshine School</h2>
         <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#courses">Courses</a>
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#courses">Courses</a>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<!-- ================= APPLY SECTION ================= -->
-<section class="apply-section">
-    <div class="apply-card">
+    <!-- ================= APPLY SECTION ================= -->
+    <section class="apply-section">
+      <div class="apply-card">
         <h2>Apply for Admission</h2>
         <p>Start your academic journey with Sunshine School</p>
 
         <form action="#" method="post">
+          <input type="text" name="name" placeholder="Full Name" required />
 
-            <input type="text" name="name" placeholder="Full Name" required>
+          <input
+            type="text"
+            name="session"
+            placeholder="Session (e.g. 2026)"
+            required
+          />
 
-            <input type="text" name="session" placeholder="Session (e.g. 2026)" required>
+          <input type="number" name="age" placeholder="Age" required />
 
-            <input type="number" name="age" placeholder="Age" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required />
 
-            <input type="tel" name="phone" placeholder="Phone Number" required>
+          <select name="course" required>
+            <option value="">Select Course</option>
+            <option value="science">Science</option>
+            <option value="commerce">Commerce</option>
+            <option value="arts">Arts</option>
+          </select>
 
-            <select name="course" required>
-                <option value="">Select Course</option>
-                <option value="science">Science</option>
-                <option value="commerce">Commerce</option>
-                <option value="arts">Arts</option>
-            </select>
+          <textarea
+            name="message"
+            placeholder="Additional Information (Optional)"
+            rows="4"
+          ></textarea>
 
-            <textarea name="message" placeholder="Additional Information (Optional)" rows="4"></textarea>
-
-            
-    </div>
-</section>
-
-</body>
+          <button type="submit">Submit Application</button>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
