@@ -1,9 +1,6 @@
 // frontend>dashboard.js
 
 // TEMP role (later this will come from JWT)
-const role = localStorage.getItem("role");
-
-const welcomeText = document.getElementById("welcomeText");
 
 // If no role is set, redirect to login
 if (!role) {
