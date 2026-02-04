@@ -17,10 +17,6 @@ if ($user = $result->fetch_assoc()) {
 
     if (password_verify($password, $user['password'])) {
 
-        $_SESSION['user_id'] = $user['id'];
-        $_SESSION['role'] = $user['role'];
-        $_SESSION['name'] = $user['name'];
-
         echo json_encode([
             "status" => "success",
             "role" => $user['role']
