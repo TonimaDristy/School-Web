@@ -1,51 +1,47 @@
 <!-- frontend>login.html -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login | Sunshine School</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="apply-page">
-
-<nav class="navbar">
-    <div class="nav-container">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="apply-page">
+    <nav class="navbar">
+      <div class="nav-container">
         <h2 class="logo">☀ Sunshine School</h2>
         <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#courses">Courses</a>
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#courses">Courses</a>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<section class="apply-section">
-    <div class="apply-card">
+    <section class="apply-section">
+      <div class="apply-card">
         <h2>Login</h2>
         <p>Access your Sunshine School account</p>
 
         <form id="loginForm">
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="password" id="password" placeholder="Password" required>
+          <input type="email" id="email" placeholder="Email" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
 
-            <select id="role" required>
-                <option value="">Select Role</option>
-                <option value="student">Student</option>
-                <option value="teacher">Teacher</option>
-                <option value="headteacher">Head Teacher</option>
-                <option value="admin">Admin</option>
-            </select>
-
-            <button type="submit">Login</button>
+          <button type="submit">Login</button>
         </form>
 
         <p id="loginMsg"></p>
-    </div>
-</section>
+      </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="js/main.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
