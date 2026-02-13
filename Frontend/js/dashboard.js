@@ -36,11 +36,19 @@ switch (role) {
         break;
 }
 
-// Logout function
+
 function logout() {
-    localStorage.clear();
-    window.location.href = "login.html";
+
+    axios.get("../Backend/logout.php")
+    .then(() => {
+        localStorage.clear();
+        window.location.href = "login.html";
+    });
+
 }
+
+
+
 
 // Helper function to capitalize first letter
 function capitalize(str) {
