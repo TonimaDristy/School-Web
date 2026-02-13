@@ -1,56 +1,30 @@
-// frontend>dashboard.js
+async function checkAuth() {
+    try {
+        const response = await axios.get(
+            "http://localhost/school-web/backend/auth.php"
+        );
 
-// TEMP role (later this will come from JWT)
-const role = localStorage.getItem("role");
+        if (response.data.status === "unauthorized") {
+            window.location.href = "login.html";
+        } else {
+            document.getElementById("welcomeText").innerText =
+                "Welcome, " + response.data.name;
 
-const welcomeText = document.getElementById("welcomeText");
+            showRole(response.data.role);
+        }
 
-// If no role is set, redirect to login
-if (!role) {
-    window.location.href = "login.html";
-}
-
-// Update welcome message
-welcomeText.innerText = "Welcome, " + capitalize(role);
-
-// Hide all role boxes initially
-const roles = ["studentBox", "teacherBox", "headteacherBox", "adminBox"];
-roles.forEach(id => {
-    const box = document.getElementById(id);
-    if (box) box.style.display = "none";
-});
-
-// Show only the box for the logged-in role
-switch (role) {
-    case "student":
-        document.getElementById("studentBox").style.display = "block";
-        break;
-    case "teacher":
-        document.getElementById("teacherBox").style.display = "block";
-        break;
-    case "headteacher":
-        document.getElementById("headteacherBox").style.display = "block";
-        break;
-    case "admin":
-        document.getElementById("adminBox").style.display = "block";
-        break;
-}
-
-
-function logout() {
-
-    axios.get("../Backend/logout.php")
-    .then(() => {
-        localStorage.clear();
+    } catch (error) {
         window.location.href = "login.html";
+    }
+}
+
+function showRole(role) {
+    const roles = ["studentBox", "teacherBox", "headteacherBox", "adminBox"];
+    roles.forEach(id => {
+        document.getElementById(id).style.display = "none";
     });
 
+    document.getElementById(role + "Box").style.display = "block";
 }
 
-
-
-
-// Helper function to capitalize first letter
-function capitalize(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-}
+checkAuth();
