@@ -1,23 +1,34 @@
-// frontend>js>main.js
-
-document.getElementById("loginForm").addEventListener("submit", function (e) {
+document.getElementById("loginForm").addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const role = document.getElementById("role").value;
 
-    // Check role selected
     if (!role) {
         document.getElementById("loginMsg").innerText = "Please select a role";
         return;
     }
 
-    // Save role temporarily (later JWT will replace this)
-    localStorage.setItem("role", role);
+    try {
+        const response = await axios.post(
+            "http://localhost/school-web/backend/login.php",
+            {
+                email: email,
+                password: password,
+                role: role
+            }
+        );
 
+        if (response.data.status === "success") {
+            window.location.href = "dashboard.html";
+        } else if (response.data.status === "wrong_password") {
+            document.getElementById("loginMsg").innerText = "Wrong password";
+        } else {
+            document.getElementById("loginMsg").innerText = "User not found";
+        }
 
-
-    // Redirect to dashboard
-    window.location.href = "dashboard.html";
+    } catch (error) {
+        document.getElementById("loginMsg").innerText = "Server error";
+    }
 });
