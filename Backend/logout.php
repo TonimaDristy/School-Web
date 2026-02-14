@@ -1,4 +1,5 @@
 <?php
 session_start();
 session_destroy();
-header("Location: ../frontend/login.html");
+echo json_encode(["status" => "logged_out"]);
+?>
