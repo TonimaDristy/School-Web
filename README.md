@@ -1,4 +1,7 @@
-🚀 Full Stack School Management System – Project Demo
+🚀 Full Stack School Management System 
+
+[Demo](https://github.com/TonimaDristy/School-Web/blob/main/aedcfd9d-0c6c-4823-80df-d1a100405a2c.jpg)
+
 
 Excited to share my latest full stack web application built using:
 
@@ -25,4 +28,3 @@ Excited to share my latest full stack web application built using:
 • Admission Application Form (Stored in Database)
 
 
-[Demo](https://github.com/TonimaDristy/School-Web/blob/main/aedcfd9d-0c6c-4823-80df-d1a100405a2c.jpg)
