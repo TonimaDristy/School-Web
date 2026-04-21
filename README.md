@@ -1,10 +1,11 @@
 🚀 Full Stack School Management System 
 
-<h2 align="center">📸 Demo</h2>
-
+<h2 align="left">📸 Demo</h2>
 <p align="center">
-  <img src="https://github.com/TonimaDristy/School-Web/raw/main/aedcfd9d-0c6c-4823-80df-d1a100405a2c.jpg" width="700"/>
+  <img src="https://github.com/TonimaDristy/School-Web/raw/main/aedcfd9d-0c6c-4823-80df-d1a100405a2c.jpg" width="500"/>
 </p>
+
+Description;
 
 My latest Project- full stack web application built using:
 
