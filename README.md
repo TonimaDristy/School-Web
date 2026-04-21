@@ -1,4 +1,4 @@
-🚀 Full Stack School Management System
+## 🚀 Full Stack School Management System
 
  📸 Demo
 
