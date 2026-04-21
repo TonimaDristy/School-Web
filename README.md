@@ -3,7 +3,7 @@
 [Demo](https://github.com/TonimaDristy/School-Web/blob/main/aedcfd9d-0c6c-4823-80df-d1a100405a2c.jpg)
 
 
-Excited to share my latest full stack web application built using:
+My latest Project- full stack web application built using:
 
 🖥 Frontend: HTML, CSS, JavaScript
 
