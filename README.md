@@ -37,10 +37,9 @@ It showcases:
 
 ### 👥 Role-Based Access
 
-<p align="center">
-  <img src="https://github.com/TonimaDristy/School-Web/raw/main/Login.png
-" width="60%" />
-</p>
+  <p align="center">
+  <img src="https://github.com/TonimaDristy/School-Web/raw/main/Login.png" width="60%" />
+   </p>
 
 - **Admin** – Full system control  
 - **Head Teacher** – Manage academic operations  
