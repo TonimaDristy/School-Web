@@ -38,7 +38,7 @@ It showcases:
 ### 👥 Role-Based Access
 
   <p align="center">
-  <img src="https://github.com/TonimaDristy/School-Web/raw/main/Login.png" width="30%" />
+  <img src="https://github.com/TonimaDristy/School-Web/raw/main/Screenshot%202026-04-22%20142746.png" width="30%" />
    </p>
 
 - **Admin** – Full system control  
